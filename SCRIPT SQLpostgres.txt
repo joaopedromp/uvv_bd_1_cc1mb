@@ -5,10 +5,10 @@ CREATE TABLE funcionario
  nome_meio CHAR(1),
  ultimo_nome VARCHAR(15) NOT NULL,
  data_nascimento DATE,
- endereco VARCHAR(3),
+ endereco VARCHAR(70),
  sexo CHAR(1),
  salario DECIMAL(10,2),
- cpf_supervisor CHAR(11) NOT NULL,
+ cpf_supervisor CHAR(11),
  numero_departamento INT NOT NULL,
  FOREIGN KEY (cpf_supervisor) REFERENCES funcionario (cpf)
 );
